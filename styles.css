@@ -408,6 +408,11 @@ nav {
   padding: 15px;
 }
 
+iframe{
+  width: 420px;
+  height: 200px;
+}
+
 .ir-a{
   display: flex;
   justify-content: space-between;
@@ -543,12 +548,12 @@ footer p, a{
   h3 { font-size: 20px;}
   h4 { font-size: 18px;}
   h5 { font-size: 16px;}
-  h6 { font-size: 12px;}
+  h6 { font-size: 14px;}
 
-  p, li{font-size: 12px;}
+  p, li{font-size: 14px;}
 
   a{
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .section-center {
@@ -616,5 +621,15 @@ footer p, a{
   
   .lista{
       margin-left: 20px;
+  }
+
+  .video{
+    width: 335px;
+    margin: 0 auto;
+  }
+
+  iframe{
+    width: auto;
+    height: auto;
   }
 }
