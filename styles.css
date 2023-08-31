@@ -32,6 +32,9 @@ Variables
   --btnColor: #0AA1DD;
   --hoverColor: #2155CD;
   --borderColor: #042c62;
+  --python: #2155CD;
+  --java: #FF9B50;
+  --code: #040D12;
 
   --mainText: #EEEEEE;
   --secondaryText: #EDEDED;
@@ -63,7 +66,7 @@ h1, h2, h3, h4, h5, h6, strong{
   font-weight: 500;
 }
 
-p, li, span, label, input, textarea, a{
+p, li, span, label, input, textarea, a, pre{
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -401,6 +404,15 @@ nav {
   padding: 15px;
 }
 
+.video-block{
+  margin: auto;
+  width: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .video{
   width: 450px;
   border-radius: 5px;
@@ -411,6 +423,28 @@ nav {
 iframe{
   width: 420px;
   height: 200px;
+}
+
+.code-python{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--python);
+
+}
+
+.code-java{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--java);
+}
+
+pre{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--code);
+  margin: 0 auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .ir-a{
@@ -542,6 +576,12 @@ footer p, a{
   }
 }
 
+@media screen and (max-width: 992px){
+  .video-block{
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 800px) {
   h1 { font-size: 28px;}
   h2 { font-size: 24px;}
@@ -554,6 +594,10 @@ footer p, a{
 
   a{
     font-size: 14px;
+  }
+
+  pre{
+    font-size: 12px;
   }
 
   .section-center {
@@ -599,6 +643,10 @@ footer p, a{
 
   .plate{
     padding: 10px 15px 15px 15px;
+  }
+  
+  .video-block{
+    flex-direction: column;
   }
   
   #landing-buttons{
