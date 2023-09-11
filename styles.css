@@ -35,11 +35,17 @@ Variables
   --python: #2155CD;
   --java: #FF9B50;
   --code: #040D12;
+  --prev: #526D82;
+  --prevHover: #27374D;
+  --next: #0AA1DD;
+  --nextHover: #2C74B3;
+  --nextModule: #2aca3e;
+  --nextModuleHover: #54B435;
 
   --mainText: #EEEEEE;
   --secondaryText: #EDEDED;
 
-  --accepted: #65C18C;
+  --accepted: #2aca3e;
   --rejected: #D82148;
 }
 /* --- ALL --- */
@@ -66,7 +72,7 @@ h1, h2, h3, h4, h5, h6, strong{
   font-weight: 500;
 }
 
-p, li, span, label, input, textarea, a, pre{
+p, li, span, label, input, textarea, a, pre, button{
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -526,6 +532,63 @@ pre{
   background-color: var(--secondaryColor);
 }
 
+.nav-buttons{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-start{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.prev {
+  color: #fff;
+  padding: 15px 30px;
+  background-color: var(--prev);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin: 0 auto;
+}
+
+.prev:hover {
+  background-color: var(--prevHover);
+  border-radius: 5px;
+}
+
+.next {
+  color: #fff;
+  padding: 15px 30px;
+  background-color: var(--next);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin: 0 auto;
+}
+
+.next:hover {
+  background-color: var(--nextHover);
+  border-radius: 5px;
+}
+
+.next_module {
+  color: #fff;
+  padding: 15px 30px;
+  background-color: var(--nextModule);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin: 0 auto;
+}
+
+.next_module:hover {
+  background-color: var(--nextModuleHover);
+  border-radius: 5px;
+}
+
 footer {
   background-color: var(--headerColor);
   color: #fff;
@@ -589,16 +652,8 @@ footer p, a{
   h4 { font-size: 18px;}
   h5 { font-size: 16px;}
   h6 { font-size: 14px;}
-
-  p, li{font-size: 14px;}
-
-  a{
-    font-size: 14px;
-  }
-
-  pre{
-    font-size: 12px;
-  }
+  p, li, a, button{font-size: 14px;}
+  pre{font-size: 12px;}
 
   .section-center {
     width: 95vw;
@@ -679,5 +734,9 @@ footer p, a{
   iframe{
     width: auto;
     height: auto;
+  }
+
+  .next, .prev{
+    padding: 15px;
   }
 }

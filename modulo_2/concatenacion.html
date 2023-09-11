@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentarios de código</title>
+    <title>Concatenación</title>
     <link rel="stylesheet" type="text/css" href="../styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
@@ -30,8 +30,8 @@
             <!-- links -->
             <ul class="links">
               <li><a href="../index.html">Inicio</a></li>
-              <li><a href="modulo1.html">Módulo 1 &#129299;</a></li>
-              <li><a href="../modulo_2/modulo2.html">Módulo 2 &#129300;</a></li>
+              <li><a href="../modulo1.html">Módulo 1 &#129299;</a></li>
+              <li><a href="modulo2.html">Módulo 2 &#129300;</a></li>
               <li><a href="../modulo_3/modulo3.html">Módulo 3 &#129327;</a></li>
               <li><a href="#">Módulo 4 &#129355;</a></li>
               <li><a href="../about.html">Sobre nosotros</a></li>
@@ -47,50 +47,59 @@
                     <div id="dot-3" class="browser-dot"></div>
                 </div>
                 <ul id="navigation">
-                    <li><a href="modulo1.html">◀ Regresar</a></li>
+                    <li><a href="modulo2.html">◀ Regresar</a></li>
                 </ul>
             </div>
             <div class="info-content">
-                <h1 class="header-title">Comentarios de código</h1>
-                <p>
-                    Los comentarios en el código son porciones de texto que los programadores escriben para explicar lo que hace una parte específica del código. Estos comentarios no se ejecutan ni afectan el funcionamiento del programa; son únicamente para que los humanos puedan entender mejor el propósito y la lógica detrás del código.
-                </p>
-                <p>
-                    Los comentarios son extremadamente útiles porque permiten a los programadores explicar su pensamiento y su enfoque mientras escriben código. Esto facilita la colaboración entre diferentes programadores y ayuda a recordar la intención detrás del código en el futuro.
-                </p>
-                <p>
-                    En la mayoría de los lenguajes de programación, los comentarios se marcan de manera especial para que la computadora los ignore durante la ejecución del programa. Por ejemplo, en Python, los comentarios de una línea comienzan con el símbolo <code>#</code>, y en muchos lenguajes, los comentarios multilínea se encierran entre <code>/*</code> y <code>*/</code>.
-                </p>
-                <p>
-                    Aquí tienes ejemplos de comentarios en Python y Java:
-                </p>
+                <h1 class="header-title">Concatenación</h1>
+                <p>La concatenación se refiere a la acción de unir o combinar cadenas de texto en programación. Tanto en Python como en Java, puedes concatenar cadenas de texto de manera sencilla.</p>
                 <br>
-                <h3>Python:</h3>
+                <h3>Python</h3>
+                <p>En Python, puedes concatenar cadenas de texto utilizando el operador +</p>
                 <div class="code-python">
                     <pre>
-# Esto es un comentario de una línea en Python
-
-"""
-Este es un comentario
-de varias líneas
-en Python.
-"""</pre>
+cadena1 = "Hola, "
+cadena2 = "mundo!"
+resultado = cadena1 + cadena2
+print(resultado)</pre>
                 </div>
-                <h3>Java:</h3>
-                <div class="code-java">
+                <p>En este ejemplo, se crean dos variables cadena1 y cadena2, y luego se utilizan el operador + para concatenarlas en la variable resultado. Al imprimir resultado, obtendrás la cadena completa: "Hola, mundo!".</p>
+                <ul class="lista">
+                    <li>int: Números enteros (por ejemplo, 5).</li>
+                    <li>float: Números de punto flotante (por ejemplo, 3.14).</li>
+                    <li>str: Cadenas de texto (por ejemplo, "Hola, mundo").</li>
+                    <li>bool: Valores booleanos (True o False).</li>
+                </ul>
+                <br>
+                <div class="code-python">
                     <pre>
-// Esto es un comentario de una línea en Java
-
-/*
-Este es un comentario
-de varias líneas
-en Java.
-*/</pre>
+mi_numero = 5
+mi_texto = "Hola, mundo"</pre>
                 </div>
                 <br>
+                <h3>Java</h3>
+                <p>En Java, puedes concatenar cadenas de texto utilizando el operador + o el método concat()</p>
+                <p>&nbsp;Usando el oprerador +</p>
+                <div class="code-java">
+                    <pre>
+String cadena1 = "Hola, ";
+String cadena2 = "mundo!";
+String resultado = cadena1 + cadena2;
+System.out.println(resultado);</pre>
+                </div>
+                <p>&nbsp;Usando el método concat()</p>
+                <div class="code-java">
+                    <pre>
+String cadena1 = "Hola, ";
+String cadena2 = "mundo!";
+String resultado = cadena1.concat(cadena2);
+System.out.println(resultado);</pre>
+                </div>
+                <p>En ambos casos, se crea una variable resultado que contiene la concatenación de cadena1 y cadena2. Al imprimir resultado, obtendrás la cadena completa: "Hola, mundo!".</p>
+                <br>
                 <div class="nav-buttons">
-                    <a href="hola_mundo.html"><button class="prev">◀ Anterior</button></a>
-                    <a href="../modulo_2/modulo2.html"><button class="next_module">MÓDULO 2 ▶</button></a>
+                    <a href="variables.html"><button class="prev">◀ Anterior</button></a>
+                    <a href="conversion.html"><button class="next">Siguiente ▶</button></a>
                 </div>
             </div>
         </div>
