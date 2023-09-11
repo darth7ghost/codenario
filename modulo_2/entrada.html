@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variables y tipos de datos</title>
+    <title>Entrada de datos</title>
     <link rel="stylesheet" type="text/css" href="../styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
@@ -51,53 +51,60 @@
                 </ul>
             </div>
             <div class="info-content">
-                <h1 class="header-title">Variables y tipos de datos</h1>
-                <p>Las variables y tipos de datos son conceptos fundamentales en la programación, tanto en Python como en Java.</p>
+                <h1 class="header-title">Entrada de datos</h1>
+                <p>La entrada de datos en Python y Java se utiliza para permitir que un programa obtenga información desde el usuario o desde una fuente externa.</p>
                 <br>
                 <h3>Python</h3>
-                <p>
-                    En Python, una variable es un contenedor que puedes usar para almacenar datos. Puedes crear una variable simplemente dando un nombre a la misma y asignándole un valor. Por ejemplo:
-                </p>
+                <p>En Python, puedes utilizar la función input() para obtener datos ingresados por el usuario desde la consola. Esta función devuelve una cadena (string) que puedes convertir al tipo de dato que necesitas. Aquí un ejemplo:</p>
                 <div class="code-python">
                     <pre>
-mi_variable = 42</pre>
+nombre = input("Por favor, ingresa tu nombre: ")  # Obtener una cadena (string) desde el usuario
+edad = int(input("Por favor, ingresa tu edad: "))  # Obtener un entero (int) desde el usuario
+
+print("Hola,", nombre)
+print("Tienes", edad, "años")</pre>
                 </div>
-                <p>Python es un lenguaje de programación con tipado dinámico, lo que significa que no necesitas declarar explícitamente el tipo de dato de una variable. Algunos tipos de datos comunes en Python incluyen:</p>
-                <ul class="lista">
-                    <li>int: Números enteros (por ejemplo, 5).</li>
-                    <li>float: Números de punto flotante (por ejemplo, 3.14).</li>
-                    <li>str: Cadenas de texto (por ejemplo, "Hola, mundo").</li>
-                    <li>bool: Valores booleanos (True o False).</li>
-                </ul>
+                <p>En el ejemplo anterior, utilizamos input() para obtener el nombre como una cadena y la edad como un entero, utilizando int(input(...)) para convertir la entrada en un entero.</p>
                 <br>
-                <div class="code-python">
-                    <pre>
-mi_numero = 5
-mi_texto = "Hola, mundo"</pre>
+                <div class="video-block">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/NdRodOkTNew"> </iframe>
+                    </div>
                 </div>
                 <br>
                 <h3>Java</h3>
-                <p>En Java, las variables también son contenedores para almacenar datos. Debes declarar el tipo de variable y luego asignarle un valor. Por ejemplo:</p>
+                <p>En Java, puedes utilizar la clase Scanner para obtener datos ingresados por el usuario desde la consola. Aquí tienes un ejemplo:</p>
                 <div class="code-java">
                     <pre>
-int miVariable = 42;</pre>
+import java.util.Scanner;  // Importar la clase Scanner
+public class EntradaDatos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);  // Crear un objeto Scanner
+
+        System.out.print("Por favor, ingresa tu nombre: ");
+        String nombre = scanner.nextLine();  // Obtener una cadena (string) desde el usuario
+
+        System.out.print("Por favor, ingresa tu edad: ");
+        int edad = scanner.nextInt();  // Obtener un entero (int) desde el usuario
+
+        System.out.println("Hola, " + nombre);
+        System.out.println("Tienes " + edad + " años");
+        
+        scanner.close();  // Cerrar el objeto Scanner al finalizar
+    }
+}</pre>
                 </div>
-                <p>Java es un lenguaje de tipado estático, lo que significa que debes declarar el tipo de dato de una variable antes de usarla. Algunos tipos de datos comunes en Java incluyen:</p>
-                <div class="lista">
-                    <li>int: Números enteros (por ejemplo, 5).</li>
-                    <li>double: Números de punto flotante de doble precisión (por ejemplo, 3.14).</li>
-                    <li>String: Cadenas de texto (por ejemplo, "Hola, mundo").</li>
-                    <li>boolean: Valores booleanos (true o false).</li>
+                <p>En este ejemplo, creamos un objeto Scanner y lo usamos para obtener una cadena y un entero desde el usuario. Es importante cerrar el objeto Scanner cuando ya no lo necesites para liberar recursos.</p>
+                <br>
+                <div class="video-block">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/9-expKIqcqY"> </iframe>
+                    </div>
                 </div>
                 <br>
-                <div class="code-java">
-                    <pre>
-int miNumero = 5;
-String miTexto = "Hola, mundo";</pre>
-                </div>
-                <br>
-                <div class="button-start">
-                    <a href="concatenacion.html"><button class="next">Siguiente ▶</button></a>
+                <div class="nav-buttons">
+                    <a href="concatenacion.html"><button class="prev">◀ Anterior</button></a>
+                    <a href="../modulo_3/modulo3.html"><button class="next_module">MÓDULO 3 ▶</button></a>
                 </div>
             </div>
         </div>

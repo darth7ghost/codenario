@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversión de datos</title>
+    <title>elif - else if</title>
     <link rel="stylesheet" type="text/css" href="../styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
@@ -30,9 +30,9 @@
             <!-- links -->
             <ul class="links">
               <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../modulo_1/modulo1.html">Módulo 1 &#129299;</a></li>
-              <li><a href="modulo2.html">Módulo 2 &#129300;</a></li>
-              <li><a href="../modulo_3/modulo3.html">Módulo 3 &#129327;</a></li>
+              <li><a href="../modulo1.html">Módulo 1 &#129299;</a></li>
+              <li><a href="../modulo_2/modulo2.html">Módulo 2 &#129300;</a></li>
+              <li><a href="modulo3.html">Módulo 3 &#129327;</a></li>
               <li><a href="#">Módulo 4 &#129355;</a></li>
               <li><a href="../about.html">Sobre nosotros</a></li>
             </ul>
@@ -47,60 +47,75 @@
                     <div id="dot-3" class="browser-dot"></div>
                 </div>
                 <ul id="navigation">
-                    <li><a href="modulo2.html">◀ Regresar</a></li>
+                    <li><a href="modulo3.html">◀ Regresar</a></li>
                 </ul>
             </div>
             <div class="info-content">
-                <h1 class="header-title">Conversión de datos</h1>
-                <p>La conversión de datos se refiere a cambiar el tipo de dato de una variable a otro tipo compatible. Tanto en Python como en Java, puedes realizar conversiones de datos de diversas maneras.</p>
+                <h1 class="header-title">elif - else if</h1>
+                <p>En Python y Java, la declaración elif (abreviatura de "else if") se utiliza para manejar múltiples condiciones en una estructura de control if. Permite evaluar una serie de condiciones secuenciales y ejecutar el bloque de código asociado al primer caso que sea verdadero.</p>
                 <br>
                 <h3>Python</h3>
-                <p>Python es conocido por su flexibilidad en cuanto a la conversión de tipos de datos. Puedes realizar conversiones explícitas usando funciones específicas para cada tipo de dato. Aquí tienes algunos ejemplos:</p>
-                <p>Para convertir un número entero (int) a un número de punto flotante (float), puedes usar float():</p>
+                <p>En Python, la estructura de una declaración if-elif-else se escribe de la siguiente manera:</p>
+                <div class="code-python">
+<pre>
+if condicion1:
+    # Código a ejecutar si condicion1 es verdadera
+elif condicion2:
+    # Código a ejecutar si condicion2 es verdadera
+else:
+    # Código a ejecutar si ninguna de las condiciones anteriores es verdadera</pre>
+                </div>
+                <p>Por ejemplo, si queremos clasificar un número en positivo, negativo o cero, podríamos hacerlo así:</p>
                 <div class="code-python">
                     <pre>
-numero_entero = 5
-numero_float = float(numero_entero)</pre>
+numero = 5
+if numero > 0:
+    print("El número es positivo")
+elif numero < 0:
+    print("El número es negativo")
+else:
+    print("El número es cero")</pre>
                 </div>
-                <p>Para convertir un número en forma de cadena (str) a un número entero (int) o de punto flotante (float), puedes usar int() o float() respectivamente:</p>
-                <div class="code-python">
-                    <pre>
-cadena_numero = "42"
-numero_entero = int(cadena_numero)
-numero_float = float(cadena_numero) </pre>
-                </div>
-                <br>
+                <p>En este caso, si numero es mayor que 0, se imprimirá "El número es positivo"; si es menor que 0, se imprimirá "El número es negativo"; y si ninguna de estas condiciones se cumple, se imprimirá "El número es cero".</p>
                 <div class="video-block">
                     <div class="video">
-                        <iframe src="https://www.youtube.com/embed/xZUd2C8X7hU"> </iframe>
+                        <iframe src="https://www.youtube.com/embed/UhK8TKkEoNI"> </iframe>
                     </div>
                 </div>
                 <br>
                 <h3>Java</h3>
-                <p>En Java, las conversiones de datos se manejan de manera más explícita debido al tipado estático. Puedes realizar conversiones de tipos utilizando operadores o métodos específicos proporcionados por las clases de los tipos de datos. Aquí tienes algunos ejemplos:</p>
-                <p>Para convertir un número entero (int) a un número de punto flotante (float), puedes usar un casting explícito:</p>
+                <p>En Java, la estructura de una declaración if-else if-else es así:</p><div class="code-java">
+                    <pre>
+if (condicion1) {
+    // Código a ejecutar si condicion1 es verdadera
+} else if (condicion2) {
+    // Código a ejecutar si condicion2 es verdadera
+} else {
+    // Código a ejecutar si ninguna de las condiciones anteriores es verdadera
+}</pre>
+                </div>
+                <p>El mismo ejemplo en Java se vería así:</p>
                 <div class="code-java">
                     <pre>
-int numeroEntero = 5;
-float numeroFloat = (float) numeroEntero;</pre>
+int numero = 5;
+if (numero > 0) {
+    System.out.println("El número es positivo");
+} else if (numero < 0) {
+    System.out.println("El número es negativo");
+} else {
+    System.out.println("El número es cero");
+}</pre>
                 </div>
-                <p>Para convertir una cadena (String) a un número entero (int) o de punto flotante (float), debes utilizar métodos de conversión proporcionados por las clases de los tipos de datos. Por ejemplo, para convertir una cadena en un entero:</p>
-                <div class="code-java">
-                    <pre>
-String cadenaNumero = "42";
-int numeroEntero = Integer.parseInt(cadenaNumero);</pre>
-                </div>
-                <p>Para convertir una cadena en un número de punto flotante, puedes usar Float.parseFloat() de manera similar.</p>
                 <br>
                 <div class="video-block">
                     <div class="video">
-                        <iframe src="https://www.youtube.com/embed/C-SZqtyDeuU"> </iframe>
+                        <iframe src="https://www.youtube.com/embed/B-VmHBBS0W0"> </iframe>
                     </div>
                 </div>
                 <br>
                 <div class="nav-buttons">
-                    <a href="concatenacion.html"><button class="prev">◀ Anterior</button></a>
-                    <a href="operadores.html"><button class="next">Siguiente ▶</button></a>
+                    <a href="if.html"><button class="prev">◀ Anterior</button></a>
+                    <a href="anidados.html"><button class="next">Siguiente ▶</button></a>
                 </div>
             </div>
         </div>
