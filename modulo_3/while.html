@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>elif - else if</title>
+    <title>Bucle while</title>
     <link rel="stylesheet" type="text/css" href="../styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
@@ -51,74 +51,66 @@
                 </ul>
             </div>
             <div class="info-content">
-                <h1 class="header-title">ifs anidados</h1>
-                <p>Los "ifs" anidados (también conocidos como estructuras de control if dentro de if) se utilizan en Python y Java para manejar condiciones más complejas donde una decisión depende de múltiples condiciones anidadas.</p>
+                <h1 class="header-title">Bucle while</h1>
+                <p>El bucle for es una estructura de control que repite un bloque de código hasta que una condición sea verdadera.</p>
                 <br>
                 <h3>Python</h3>
-                <p>En Python, la estructura anidada de un if quedaría así:</p>
-                <div class="code-python">
-<pre>
-if condicion1:
-    # Código a ejecutar si condicion1 es verdadera
-    if condicion2:
-        # Código a ejecutar si ambas condiciones son verdaderas
-    else:
-        # Código a ejecutar si condicion1 es verdadera, pero condicion2 es falsa
-else:
-    # Código a ejecutar si condicion1 es falsa</pre>
-                </div>
-                <p>Por ejemplo, si queremos verificar si un número es positivo, negativo o cero, pero también si es par o impar, podríamos hacerlo con ifs anidados:</p>
+                <p>Esta es la estructura básica en python:</p>
                 <div class="code-python">
                     <pre>
-numero = 5
-if numero > 0:
-    print("El número es positivo")
-    if numero % 2 == 0:
-        print("El número es par")
-    else:
-        print("El número es impar")
-elif numero < 0:
-    print("El número es negativo")
-else:
-    print("El número es cero")</pre>
+while condición:
+    # Código a ejecutar mientras la condición sea verdadera</pre>
                 </div>
-                <p>Primero se verifica si el número es positivo y, si lo es, se verifica si es par o impar. Si no es positivo, se verifica si es negativo o cero.</p>
+                <br>
+                <ul class="lista">
+                    <li>condición: Es una expresión booleana que determina si el bucle debe continuar ejecutándose.</li>
+                </ul>
+                <p>Ejemplo de bucle for en Python para imprimir números del 1 al 5:</p>
+                <div class="code-python">
+                    <pre>
+numero = 1
+while numero <= 5:
+    print(numero)
+    numero += 1</pre>
+                </div>
+                <br>
+                <div class="video-block">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/rnUkxgJK4Qg"> </iframe>
+                    </div>
+                </div>
                 <br>
                 <h3>Java</h3>
-                <p>En Java, la estructura de un if anidado es así:</p><div class="code-java">
+                <p>Esta es la estructura básica en Java:</p><div class="code-java">
                     <pre>
-if (condicion1) {
-    // Código a ejecutar si condicion1 es verdadera
-    if (condicion2) {
-        // Código a ejecutar si ambas condiciones son verdaderas
-    } else {
-        // Código a ejecutar si condicion1 es verdadera, pero condicion2 es falsa
-    }
-} else {
-    // Código a ejecutar si condicion1 es falsa
+while (condición) {
+    // Código a ejecutar mientras la condición sea verdadera
 }</pre>
                 </div>
-                <p>El mismo ejemplo en Java se vería así:</p>
+                <br>
+                <ul class="lista">
+                    <li>condición: Es una expresión booleana que determina si el bucle debe continuar ejecutándose.</li>
+                </ul>
+                <br>
+                <p>Ejemplo de bucle for en Java para imprimir números del 1 al 5:</p>
                 <div class="code-java">
                     <pre>
-int numero = 5;
-if (numero > 0) {
-    System.out.println("El número es positivo");
-    if (numero % 2 == 0) {
-        System.out.println("El número es par");
-    } else {
-        System.out.println("El número es impar");
-    }
-} else if (numero < 0) {
-    System.out.println("El número es negativo");
-} else {
-    System.out.println("El número es cero");
+int numero = 1;
+while (numero <= 5) {
+    System.out.println(numero);
+    numero++;
 }</pre>
+                </div>
+                <br>
+                <div class="video-block">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/Vl9asbaZFZg"> </iframe>
+                    </div>
                 </div>
                 <br>
                 <div class="nav-buttons">
-                    <a href="elif.html"><button class="prev">◀ Anterior</button></a>
-                    <a href="multiples.html"><button class="next">Siguiente ▶</button></a>
+                    <a href="for.html"><button class="prev">◀ Anterior</button></a>
+                    <a href="anidados.html"><button class="next">Siguiente ▶</button></a>
                 </div>
             </div>
         </div>
