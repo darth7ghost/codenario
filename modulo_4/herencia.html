@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav_info"  id="header-title">
+        <h3>CODE/NARIO</h3>
+        <ul class="infohead">
+            <li>Ingeniería en Ciencias y Sistemas</li>
+        </ul>
+      </div>
+        <nav>
+          <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+              <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <!-- links -->
+            <ul class="links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../modulo_1/modulo1.html">Módulo 1 &#129299;</a></li>
+                <li><a href="../modulo_2/modulo2.html">Módulo 2 &#129300;</a></li>
+                <li><a href="../modulo_3/modulo3.html">Módulo 3 &#129327;</a></li>
+                <li><a href="modulo4.html">Módulo 4 &#129355;</a></li>
+                <li><a href="../about.html">Sobre nosotros</a></li>
+            </ul>
+          </div>
+        </nav>
+        <section class="main">
+            <div class="content">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>
+                        <div id="dot-3" class="browser-dot"></div>
+                    </div>
+                    <ul id="navigation">
+                        <li><a href="{% url 'modulo4' %}">◀ Regresar</a></li>
+                    </ul>
+                </div>
+                <div class="info-content">
+                    <h1 class="header-title">Herencia</h1>
+                    <p>La herencia en programación orientada a objetos es un concepto que permite a una clase heredar los atributos y métodos de otra clase, estableciendo una relación "es un tipo de" entre ellas. La clase que hereda se llama subclase o clase derivada, y la clase de la que se hereda se llama clase base o superclase.</p>
+                    <br>
+                    <h3>Python</h3>
+                    <div class="code-python">
+                        <pre>
+    # Definición de una clase base en Python
+    class Animal:
+        def __init__(self, nombre):
+            self.nombre = nombre
+    
+        def hacer_sonido(self):
+            pass  # Método que será implementado por las subclases
+    
+    # Definición de una subclase que hereda de Animal
+    class Perro(Animal):
+        def hacer_sonido(self):
+            return "Guau"
+    
+    # Crear un objeto (instancia) de la subclase Perro
+    mi_perro = Perro(nombre="Buddy")
+    
+    # Acceder a los atributos y métodos de la clase base y subclase
+    print(mi_perro.nombre)
+    print(mi_perro.hacer_sonido())
+    </pre>
+                    </div>
+                    <p>Te dejamos un video sobre la herencia en Python para que puedas aprender más a detalle:</p>
+                    <div class="video-block">
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/0xt806gLghg"> </iframe>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Java</h3>
+                    <div class="code-java">
+                        <pre>
+    // Definición de una clase base en Java
+    public class Animal {
+        String nombre;
+    
+        public Animal(String nombre) {
+            this.nombre = nombre;
+        }
+    
+        public void hacerSonido() {
+            // Método que será implementado por las subclases
+        }
+    }
+    
+    // Definición de una subclase que hereda de Animal
+    public class Perro extends Animal {
+        public Perro(String nombre) {
+            super(nombre);
+        }
+    
+        // Implementación del método hacerSonido para la subclase Perro
+        public void hacerSonido() {
+            System.out.println("Guau");
+        }
+    
+        // Método adicional de la subclase Perro
+        public void perseguirCola() {
+            System.out.println("Persiguiendo la cola");
+        }
+    
+        // Método principal (main) para probar las clases
+        public static void main(String[] args) {
+            // Crear un objeto (instancia) de la subclase Perro
+            Perro miPerro = new Perro("Buddy");
+    
+            // Acceder a los atributos y métodos de la clase base y subclase
+            System.out.println(miPerro.nombre);
+            miPerro.hacerSonido();
+            miPerro.perseguirCola();
+        }
+    }
+    </pre>
+                    </div>
+                    <p>Acá te dejamos un video sobre la herencia en Java para que puedas aprender más a detalle:</p>
+                    <div class="video-block">
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/2hYhpRZFuns"> </iframe>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="nav-buttons">
+                        <a href="constructor.html"><button class="prev">◀ Anterior</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer>
+        <p>CUNOR - 7a. calle 1-11 zona 6. Cobán, Alta Verapaz. Código Postal: 16001</p>
+        <br>
+        <p>&copy; Seminario de Sistemas I - Github: <a target="_blank" href="https://github.com/darth7ghost"> @darth7ghost</a></p>
+    </footer>
+    <script src="../app.js"></script>
+</body>
+
+</html>
